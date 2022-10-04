@@ -41,17 +41,3 @@ header nav ul li a:hover{
 header h1{
     font-family: 'Nabla', cursive;
 }
-
-section{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-a{
-    grid-column: 3;
-}
-
-p{
-    grid-column: 1;
-}
