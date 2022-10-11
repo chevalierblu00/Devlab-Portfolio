@@ -8,11 +8,12 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #000000;
 }
 
 header{
     display: flex;
-    background-color: #ffffff;
+    background-color: #000000;
     justify-content: space-around;
     padding: 1% 0;
 }
@@ -32,6 +33,7 @@ header nav ul li a{
     margin-right: 20px;
     border-bottom: 1px solid transparent;
     transition: 0.4s ease-in-out;
+    font-family: 'Titillium Web';
 }
 
 header nav ul li a:hover{
@@ -39,19 +41,53 @@ header nav ul li a:hover{
 }
 
 header h1{
-    font-family: 'Nabla', cursive;
+    font-family: 'Titillium Web';
+    color: rgb(229, 9, 20);
 }
 
 section{
+    padding-top: 2%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-a{
+.image{
+    padding-left: 10%;
+}
+
+a>img{
     grid-column: 3;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
 }
 
 p{
+    font-family: 'Titillium Web';
+    color: rgb(229, 9, 20);
+}
+
+.bloc-1{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(255, 255, 255);
     grid-column: 1;
+    height: 500px;
+    border-radius: 5%;
+}
+
+.bloc-2{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(255, 255, 255);
+    grid-column: 2;
+    height: 500px;
+    border-radius: 5%;
+}
+
+.bloc-3{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(255, 255, 255);
+    grid-column: 3;
+    height: 500px;
+    border-radius: 5%;
 }

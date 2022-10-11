@@ -32,6 +32,7 @@ header nav ul li a{
     margin-right: 20px;
     border-bottom: 1px solid transparent;
     transition: 0.4s ease-in-out;
+    font-family: 'Titillium Web';
 }
 
 header nav ul li a:hover{
@@ -39,5 +40,5 @@ header nav ul li a:hover{
 }
 
 header h1{
-    font-family: 'Nabla', cursive;
+    font-family: 'Titillium Web';
 }
