@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
+:root {
+  --success: #00b894;
+  --progress: #e17055;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -53,8 +58,11 @@ section{
 }
 
 .image{
-    margin: 8%;
+    margin-bottom: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
+
 
 div>h1{
     font-family: 'Titillium Web';
@@ -75,24 +83,22 @@ p{
     color: rgb(229, 9, 20);
 }
 
-.bloc_1{
-    margin-left: 15%;
+.commun{
+  margin-left: 15%;
     margin-right: 15%;
     background-color: rgb(209, 209, 209);
-    grid-column: 1;
     height: 500px;
     border-radius: 5%;
     box-shadow: 10px 10px 6px rgb(97, 89, 89);
+    cursor: pointer;
+}
+
+.bloc_1{
+    grid-column: 1;
 }
 
 .bloc_2{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: rgb(209, 209, 209);
     grid-column: 2;
-    height: 500px;
-    border-radius: 5%;
-    box-shadow: 10px 10px 6px rgb(97, 89, 89);
 }
 
 .bloc-3{
@@ -184,6 +190,7 @@ p{
     z-index: 2;
     pointer-events: none;
     animation: flicker 0.15s infinite;
+    z-index: 3;
   }
   .effet::before {
     content: " ";
@@ -197,6 +204,7 @@ p{
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
+    z-index: 3;
   }
 
 
@@ -207,15 +215,17 @@ p{
   }
 
   .myDIV {
-    animation: drop cubic-bezier(0.28, 0.42, 0.48, 0.85) 2s infinite;
+    animation: drop cubic-bezier(0, 0, 0.72, 0.67) 2s infinite;
     animation-direction: normal;
     height:2px;
     background: rgba(149, 147, 147, 0.297);
     position: relative;
+    z-index: 3;
   }
 
   .popup_container.active {
     display: flex;
+    z-index: 2;
  }
 
  .popup_container {
@@ -231,10 +241,12 @@ p{
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px 6px rgb(97, 89, 89);
+  border-radius: 2%;
 }
 
 .popup_container2.active {
   display: flex;
+  z-index: 2;
 }
 
 .popup_container2 {
@@ -250,4 +262,139 @@ background-color: rgb(209, 209, 209);
 justify-content: center;
 align-items: center;
 box-shadow: 10px 10px 6px rgb(97, 89, 89);
+border-radius: 2%;
+}
+
+.titre{
+  margin-left: 35%;
+  margin-bottom: 10px;
+  justify-content: center;
+  color: rgb(229, 9, 20);
+}
+
+
+.container>h1{
+  margin-left: 40%;
+  justify-content: center;
+}
+
+.competance{
+  list-style-type: none;
+  padding: 0 8em;
+  margin: 10px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  color: #fff;
+  background: #EE4437;
+}
+
+.liste{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.text-center { text-align:center; }
+
+.progressbar-wrapper {
+  background-color: #dfe6e9;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.progressbar {
+  background-color: var(--progress);
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.progressbar[title="downloading"] {
+   background-color: var(--progress);
+}
+
+.progressbar[title="downloaded"] {
+   background-color: var(--success);
+}
+  
+.mp4 {
+  width: 100%;
+}
+
+.mp3 {
+  width: 60%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.flex2{
+  display: flex;
+  flex-direction: column;
+}
+
+.diapo{
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  height: 80%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+#nav-droite, #nav-gauche{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(255, 0, 0);
+  font-size: 3em;
+}
+
+#nav-droite{
+  right: 10px;
+}
+#nav-gauche{
+  left: 20px;
+}
+
+.elements{
+  display: flex;
+  transition: 1s linear;
+  height: 100%;
+}
+
+.element{
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.element > img{
+  width: 100%;
+  height: 100%;
+}
+
+.caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255,255,255,0.4);
+  padding: 30px;
 }
