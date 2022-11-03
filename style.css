@@ -23,45 +23,18 @@ header{
     padding: 1% 0;
 }
 
-header nav{
-    align-self: center;
-}
-
-header nav ul{
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    margin-right: 20px;
-    border-bottom: 1px solid transparent;
-    transition: 0.4s ease-in-out;
-    font-family: 'Titillium Web';
-}
-
-header nav ul li a:hover{
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
-
 header h1{
     font-family: 'Titillium Web';
     color: rgb(229, 9, 20);
 }
 
 section{
-    padding-top: 2%;
+    padding-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     z-index: 0;
 }
 
-.image{
-    margin-bottom: 8%;
-    margin-left: 8%;
-    margin-right: 8%;
-}
 
 
 div>h1{
@@ -69,6 +42,7 @@ div>h1{
     color: rgb(229, 9, 20);
     margin-left: 30%;
     margin-bottom: 8%;
+    text-align: justify;
 }
 
 .Project{
@@ -81,202 +55,78 @@ div>h1{
 p{
     font-family: 'Titillium Web';
     color: rgb(229, 9, 20);
+    text-align: justify;
+    margin: 5%;
 }
 
-.commun{
-  margin-left: 15%;
-    margin-right: 15%;
-    background-color: rgb(209, 209, 209);
-    height: 500px;
-    border-radius: 5%;
-    box-shadow: 10px 10px 6px rgb(97, 89, 89);
-    cursor: pointer;
+.box {
+  margin-left: 20%;
+  background-color: transparent;
+  width: 25em;
+  height: 25em;
+  perspective: 1000px;
+}
+.box-inner {
+  width: 25em;
+  height: 25em;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
 }
 
-.bloc_1{
-    grid-column: 1;
+.column1{
+  grid-column: 1;
 }
 
-.bloc_2{
-    grid-column: 2;
+.column2{
+  grid: 2;
 }
 
-.bloc-3{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: rgb(209, 209, 209);
-    grid-column: 3;
-    height: 500px;
-    border-radius: 5%;
-    box-shadow: 10px 10px 6px rgb(97, 89, 89);
+.box:hover .box-inner {
+  transform: rotateX(180deg);
 }
-  
-  @keyframes flicker {
-    0% {
-      opacity: 0.27861;
-    }
-    5% {
-      opacity: 0.34769;
-    }
-    10% {
-      opacity: 0.23604;
-    }
-    15% {
-      opacity: 0.90626;
-    }
-    20% {
-      opacity: 0.18128;
-    }
-    25% {
-      opacity: 0.83891;
-    }
-    30% {
-      opacity: 0.65583;
-    }
-    35% {
-      opacity: 0.67807;
-    }
-    40% {
-      opacity: 0.26559;
-    }
-    45% {
-      opacity: 0.84693;
-    }
-    50% {
-      opacity: 0.96019;
-    }
-    55% {
-      opacity: 0.08594;
-    }
-    60% {
-      opacity: 0.20313;
-    }
-    65% {
-      opacity: 0.71988;
-    }
-    70% {
-      opacity: 0.53455;
-    }
-    75% {
-      opacity: 0.37288;
-    }
-    80% {
-      opacity: 0.71428;
-    }
-    85% {
-      opacity: 0.70419;
-    }
-    90% {
-      opacity: 0.7003;
-    }
-    95% {
-      opacity: 0.36108;
-    }
-    100% {
-      opacity: 0.24387;
-    }
-  }
 
-  .effet::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.15s infinite;
-    z-index: 3;
-  }
-  .effet::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-    z-index: 3;
-  }
-
-
-  @keyframes drop
-  {
-  from {top:0px;}
-  to {top: 715px;}
-  }
-
-  .myDIV {
-    animation: drop cubic-bezier(0, 0, 0.72, 0.67) 2s infinite;
-    animation-direction: normal;
-    height:2px;
-    background: rgba(149, 147, 147, 0.297);
-    position: relative;
-    z-index: 3;
-  }
-
-  .popup_container.active {
-    display: flex;
-    z-index: 2;
- }
-
- .popup_container {
+.box-front,
+.box-back {
   position: absolute;
-  top: 20%;
-  left: 30%;
-  height: 50%;
-  width: 50%;
-  display: none;
-  border: #ff0000;
-  border-width: 1em;
-  background-color: rgb(209, 209, 209);
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.box-front {
   box-shadow: 10px 10px 6px rgb(97, 89, 89);
-  border-radius: 2%;
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(209, 209, 209);
+  font-family: 'Titillium Web';
+  color: rgb(229, 9, 20);
 }
-
-.popup_container2.active {
-  display: flex;
-  z-index: 2;
-}
-
-.popup_container2 {
-position: absolute;
-top: 20%;
-left: 30%;
-height: 50%;
-width: 50%;
-display: none;
-border: #ff0000;
-border-width: 1em;
-background-color: rgb(209, 209, 209);
-justify-content: center;
-align-items: center;
-box-shadow: 10px 10px 6px rgb(97, 89, 89);
-border-radius: 2%;
-}
-
-.titre{
-  margin-left: 35%;
-  margin-bottom: 10px;
-  justify-content: center;
+.box-back {
+  box-shadow: 10px 10px 6px rgb(97, 89, 89);
+  border-radius: 5%;
+  background-color: rgb(130, 129, 129);
+  color: #eeeeee;
+  transform: rotateX(180deg);
+  font-family: 'Titillium Web';
   color: rgb(229, 9, 20);
 }
 
-
-.container>h1{
-  margin-left: 40%;
-  justify-content: center;
+.bloc {
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: rgb(209, 209, 209);
+  grid-column: 3;
+  width: 25em;
+  height: 25em;
+  border-radius: 5%;
+  box-shadow: 10px 10px 6px rgb(97, 89, 89);
 }
+
+.image{
+  margin-top: 10%;
+}
+
 
 .competance{
   list-style-type: none;
@@ -298,7 +148,7 @@ border-radius: 2%;
 .container {
   max-width: 720px;
   margin: 0px auto;
-  width: 100%;
+  width: 90%;
 }
 
 .text-center { text-align:center; }
@@ -312,28 +162,44 @@ border-radius: 2%;
 }
 
 .progressbar {
-  background-color: var(--progress);
+  background-color: #00b894;
   color: white;
   padding: 1rem;
   text-align: right;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 15px;
 }
-
-.progressbar[title="downloading"] {
-   background-color: var(--progress);
-}
-
-.progressbar[title="downloaded"] {
-   background-color: var(--success);
-}
   
-.mp4 {
-  width: 100%;
+.css {
+  width: 90%;
 }
 
-.mp3 {
-  width: 60%;
+.html {
+  width: 90%;
+}
+
+.js {
+  width: 50%;
+}
+
+.python {
+  width: 70%;
+}
+
+.php {
+  width: 20%;
+}
+
+
+.project{
+  width: 100%;
+  height: 100%;
+}
+
+.project2{
+  width: 100%;
+  height: 100%;
+  margin-left: 2rem;
 }
 
 .flex {
@@ -376,12 +242,19 @@ border-radius: 2%;
 .elements{
   display: flex;
   transition: 1s linear;
-  height: 100%;
 }
 
 .element{
+  margin-top: 3rem;
   flex: 1 0 100%;
   position: relative;
+}
+
+ma
+.element2{
+  flex: 1 0 100%;
+  position: relative;
+  margin-left: 2rem;
 }
 
 .element > img{

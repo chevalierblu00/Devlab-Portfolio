@@ -42,3 +42,15 @@ header nav ul li a:hover{
 header h1{
     font-family: 'Titillium Web';
 }
+
+video{
+    margin-left: 7rem;
+}
+
+section{
+    background-color: azure;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: justify;
+}
