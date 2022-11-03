@@ -82,5 +82,5 @@ function stopTimer(){
  * On redémarre le défilement
  */
 function startTimer(){
-    timer = setInterval(slideNext, 4000)
+    timer = setInterval(slideNext, 4)
 }
