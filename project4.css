@@ -128,11 +128,11 @@
   
   @media screen and (max-width: 480px) {
     .img {
-      height: 100px;
+      height: 40px;
+      width: 60px;
     }
-    iframe {
-      height: 100px;
-      width: 100px;
+    section .div .a {
+      width: 10%;
     }
     .video_minature {
       height: 90%;
@@ -161,9 +161,9 @@
       color: #000;
       text-align: start;
     }
-    p {
+    .p {
       text-align: start;
-      font-size: medium !important;
+      font-size: 10px !important;
       text-align: justify;
     }
     section {
@@ -247,8 +247,8 @@
       width: 100px;
     }
     .img3 {
-      height: 100px;
-      width: 100px;
+      height: 50px;
+      width: 50px;
     }
     .video {
       height: 50%;
