@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'europa';
+    text-decoration: none;
+}
+
+.Portfolio{
+    text-align: center;
+    cursor: pointer;
+}
+
+body{
+    background-color: #373737;
+    color: rgb(216, 216, 216);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0;
+}
+
+header nav{
+    align-self: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+header h1{
+    color: rgb(255, 0, 0);
+}
+
+video{
+    margin-left: 4rem;
+    width: 46rem;
+    height: 30rem;
+}
+
+section{
+    margin-top: 3rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    text-align: justify;
+}
+
+.bloc {
+    margin-top: 2rem;
+    background-color: rgb(209, 209, 209);
+    grid-column: 3;
+    width: 25em;
+    height: 13em;
+    border-radius: 5%;
+    box-shadow: 10px 10px 6px rgb(99, 99, 99);
+  }
+
+  .presentation{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 14rem;
+    margin-right: 14rem;
+}
+
+.bloc>h2{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 0, 0);
+}
+
+.bloc>h4{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    color: rgb(255, 0, 0);
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 500px) {
+    video{
+        margin-left: 1rem;
+        width: 19rem;
+        height: 12rem;
+        margin-top: 4.5rem;
+    }
+    
+    section{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: justify;
+        font-size: small;
+    }
+    
+    .bloc {
+        margin-top: 5rem;
+        background-color: rgb(209, 209, 209);
+        grid-column: 3;
+        width: 17em;
+        height: 10em;
+        border-radius: 5%;
+        box-shadow: 10px 10px 6px rgb(99 99 99);
+      }
+    
+      .presentation{
+        margin-top: -3rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .bloc>h2{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        color: rgb(255, 0, 0);
+        font-size: 0.7rem;
+
+    }
+    
+    .bloc>h4{
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+        color: rgb(255, 0, 0);
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 580px) {
+    video{
+        margin-left: 1rem;
+        width: 29rem;
+        height: 21rem;
+    }
+    
+    section{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: justify;
+    }
+    
+    .bloc {
+        margin-top: 2.2rem;
+        background-color: rgb(209, 209, 209);
+        grid-column: 3;
+        width: 12em;
+        height: 9em;
+        border-radius: 5%;
+        box-shadow: 10px 10px 6px rgb(99 99 99);
+      }
+    
+      .presentation{
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    section{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: justify;
+    }
+
+    .bloc>h2{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        color: rgb(255, 0, 0);
+        font-size: 1rem;
+    }
+    
+    .bloc>h4{
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+        color: rgb(255, 0, 0);
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 690px) {
+    video{
+        margin-left: 1rem;
+        width: 24rem;
+        height: 21rem;
+        margin-top: -1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 690px) and (max-width: 980px) {
+    video{
+        margin-left: 1rem;
+        width: 29rem;
+        height: 21rem;
+
+    }
+    
+    section{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: justify;
+    }
+    
+    .bloc {
+        margin-top: 2.2rem;
+        background-color: rgb(209, 209, 209);
+        grid-column: 3;
+        width: 12em;
+        height: 9em;
+        border-radius: 5%;
+        box-shadow: 10px 10px 6px rgb(99 99 99);
+      }
+    
+      .presentation{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    section{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: justify;
+    }
+
+    .bloc>h2{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        color: rgb(255, 0, 0);
+        font-size: 1rem;
+    }
+    
+    .bloc>h4{
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+        color: rgb(255, 0, 0);
+        font-size: 0.5rem;
+    }
+}

@@ -1,397 +1,111 @@
-@import url('https : //fonts.googleapis.com/css2?family= Roboto +Mono:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'europa';
+    text-decoration: none;
+}
 
 .Portfolio{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 0, 0);
     text-align: center;
     cursor: pointer;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  body {
-    background-image: linear-gradient(rgba(153, 153, 153, 0.5960784314), rgba(187, 187, 187, 0.6823529412)), url("https://upload.wikimedia.org/wikipedia/commons/b/b4/Donjon_Ch%C3%A2teau_de_Vincennes.JPG");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: "Roboto";
-  }
-  
-  section {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.35fr;
-    grid-template-rows: auto;
-    text-align: center;
-  }
-  section .header {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    grid-row: 1/5;
-    grid-column: 1/2;
-    align-items: flex-start;
-    margin: 10px;
-  }
-  section .video_minature {
-    grid-row: 1;
-    cursor: pointer;
-  }
-  section .h1 {
-    text-decoration: underline;
-    font-size: 45px;
-    color: #000;
-    z-index: 1;
-    margin-top: 0%;
-    margin-bottom: 0%;
-  }
-  section h1 {
-    text-decoration: underline;
-    font-size: 45px;
-    color: #000;
-    z-index: 1;
-    margin-top: 20%;
-    margin-bottom: 5%;
-  }
-  section h3 {
-    font-size: 35px;
-    color: #000;
-    text-align: start;
-  }
-  section h5 {
-    font-size: 25px;
-    color: #000;
-    text-align: start;
-  }
-  section p {
-    text-align: start;
-    font-size: larger;
-    text-align: justify;
-  }
-  section .menu {
-    padding: 5%;
-    list-style: none;
-    text-align: start;
-    width: 180px;
-  }
-  section ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: start;
-  }
-  section li li {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    margin: 0;
-  }
-  section a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 0;
-    font-size: 1.2em;
-  }
-  section ul li a, section li:hover li a {
-    font-size: 1em;
-  }
-  section li:hover li {
-    max-height: 15em;
-  }
-  section .div {
-    margin-top: 15%;
-    grid-row: 1/5;
-    grid-column: 2/3;
-  }
-  section .div .flex {
+body{
+    background-color: #373737;
+    color: rgb(216, 216, 216);
+}
+
+header{
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 5%;
-    right: 1%;
-    align-items: flex-end;
+    justify-content: space-around;
+    padding: 1% 0;
+}
+
+header nav{
+    align-self: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+header h1{
+    color: rgb(255, 0, 0);
+}
+
+video{
+    margin-left: 4rem;
+    width: 46rem;
+    height: 30rem;
+}
+
+section{
+    margin-top: 3rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    text-align: justify;
+}
+
+.bloc {
+    background-color: rgb(209, 209, 209);
+    grid-column: 3;
+    width: 25em;
+    height: 20em;
+    border-radius: 5%;
+    box-shadow: 10px 10px 6px rgb(99, 99, 99);
   }
-  section .div .img {
-    margin-bottom: 2%;
-  }
-  section .div .a {
-    width: 20%;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .img {
-      height: 50px;
-      width: 80px;
-  }
-    }
-    section .div .a {
-      width: 15%;
-    }
-    .video_minature {
-      height: 90%;
-      width: 90%;
-    }
-    .h1 {
-      text-decoration: underline;
-      font-size: 45px;
-      color: #000;
-      z-index: 1;
-      margin-top: 0%;
-      margin-bottom: 5%;
-    }
-    h1 {
-      font-size: 35px !important;
-      margin-top: 0% !important;
-      margin-bottom: 5% !important;
-    }
-    h3 {
-      font-size: 25px !important;
-      color: #000;
-      text-align: start;
-    }
-    h5 {
-      font-size: 15px !important;
-      color: #000;
-      text-align: start;
-    }
-    .p {
-      text-align: start;
-      font-size: 10px !important;
-      text-align: justify;
-    }
-    section {
-      display: grid;
-      grid-template-columns: 1fr 0.5fr;
-      grid-template-rows: 25vh 25vh 25vh 25vh;
-      text-align: center;
-    }
-    section .header {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      top: 0%;
-      left: 0%;
-      grid-row: 1;
-      grid-column: 1/2;
-      align-items: flex;
-      z-index: 3;
-      font-size: smaller;
-    }
-    section .menu {
-      display: flex !important;
-      flex-direction: row !important;
-    }
-    section ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: center;
-    }
-    section .li {
-      margin-left: 10%;
-    }
-    section li li {
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.5s;
-      border-radius: 0;
-      box-shadow: none;
-      border: none;
-      margin: 0;
-    }
-    section a {
-      display: block;
-      text-decoration: none;
-      color: #fff;
-      padding: 8px 0;
-      font-family: verdana;
-      font-size: 1.2em;
-    }
-    section ul li a, section li:hover li a {
-      font-size: 1em;
-    }
-    section li:hover li {
-      max-height: 15em;
-      background-color: rgba(65, 65, 65, 0.641);
-    }
-    section .div {
-      margin-top: 30%;
-      grid-row: 1/5;
-      grid-column: 1/2;
-    }
-    section .div .popup_container.active {
-      position: absolute;
-      top: 30%;
-      left: 25%;
-      height: 50%;
-      width: 50%;
-      display: flex;
-      z-index: 2;
-    }
-    section .div .flex {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 25%;
-      right: 1%;
-    }
-    .img2 {
-      height: 100px;
-      width: 100px;
-    }
-    .img3 {
-      height: 50px;
-      width: 50px;
-    }
-    .video {
-      height: 50%;
-      width: 80%;
-      position: fixed;
-      top: 30%;
-      left: 10%;
-    }
-  }
-  @media screen and (min-width: 480px) and (max-width: 910px) {
-    section {
-      display: grid;
-      grid-template-columns: 0.3fr 1fr 0.3fr;
-      grid-template-rows: auto;
-      text-align: center;
-    }
-    section .img2 {
-      height: 100px;
-      width: 100px;
-    }
-    section .img3 {
-      height: 100px;
-      width: 100px;
-    }
-    section .header {
-      position: fixed;
-      top: 0%;
-      left: 0%;
-      grid-row: 1/5;
-      grid-column: 1/2;
-      text-align: left;
-      margin: 10px;
-    }
-    section .video_minature {
-      height: 90%;
-      width: 90%;
-    }
-    section .h1 {
-      text-decoration: underline;
-      font-size: 35px;
-      color: #000;
-      z-index: 1;
-      margin-top: 0%;
-      margin-bottom: 0%;
-    }
-    section h1 {
-      text-decoration: underline;
-      font-size: 35px;
-      color: #000;
-      z-index: 1;
-      margin-top: 20%;
-      margin-bottom: 5%;
-    }
-    section h3 {
-      font-size: 25px;
-      color: #000;
-      text-align: start;
-    }
-    section h5 {
-      font-size: 15px;
-      color: #000;
-      text-align: start;
-    }
-    section p {
-      text-align: start;
-      font-size: small;
-      text-align: justify;
-    }
-    section .menu {
-      padding: 1%;
-      list-style: none;
-      text-align: start;
-      width: 180px;
-      font-size: 20px;
-    }
-    section ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: start;
-    }
-    section li li {
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.5s;
-      border-radius: 0;
-      box-shadow: none;
-      border: none;
-      margin: 0;
-    }
-    section a {
-      display: block;
-      text-decoration: none;
-      color: #fff;
-      padding: 8px 0;
-      font-family: verdana;
-      font-size: 1.2em;
-    }
-    section ul li a, section li:hover li a {
-      font-size: 1em;
-    }
-    section li:hover li {
-      max-height: 15em;
-    }
-    section .div {
-      margin-top: 15%;
-      margin-left: 3%;
-      grid-row: 1/5;
-      grid-column: 2/3;
-    }
-    section .div .flex {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 5%;
-      right: 1%;
-    }
-    section .div .img {
-      margin-bottom: 3%;
-      height: 100px;
-      width: 150px;
-    }
-    section .div iframe {
-      margin-bottom: 3%;
-      height: 150px;
-      width: 150px;
-    }
-    section .div .video {
-        margin-bottom: 3%;
-        height: 100%;
-        width: 100%;
-      }
-    section .div .popup_container {
-      display: none;
-    }
-    section .div .active {
-      position: absolute;
-      top: 20%;
-      left: 20%;
-      height: 50%;
-      width: 50%;
-      display: flex;
-      z-index: 2;
-    }
-  }
+
+  .presentation{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 14rem;
+    margin-right: 14rem;
+}
+
+.bloc>h2{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 0, 0);
+}
+
+.bloc>h4{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    color: rgb(255, 0, 0);
+}
+
+.bloc>a{
+  margin-left: 2rem;
+  margin-top: 2rem;
+  color: rgb(255, 0, 0);
+}
+
+.image{
+  margin-left: 4rem;
+  width: 46rem;
+  height: 30rem;
+}
+
+.bouton{
+  display: flex;
+  flex-direction: column;
+}
+
