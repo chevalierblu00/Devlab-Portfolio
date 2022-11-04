@@ -115,24 +115,14 @@
     position: fixed;
     top: 5%;
     right: 1%;
+    align-items: flex-end;
   }
   section .div .img {
     margin-bottom: 3%;
   }
-  section .div iframe {
+  section .div .a {
     margin-bottom: 3%;
-  }
-  section .div .popup_container {
-    display: none;
-  }
-  section .div .active {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    height: 50%;
-    width: 50%;
-    display: flex;
-    z-index: 2;
+    width: 30%;
   }
   
   @media screen and (max-width: 480px) {
