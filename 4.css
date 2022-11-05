@@ -49,7 +49,7 @@ header h1{
     color: rgb(255, 0, 0);
 }
 
-video{
+.image{
     margin-left: 4rem;
     width: 46rem;
     height: 30rem;
@@ -62,11 +62,12 @@ section{
     text-align: justify;
 }
 
-.bloc-presentation {
+.bloc {
+    margin-top: 2rem;
     background-color: rgb(209, 209, 209);
     grid-column: 3;
-    width: 20em;
-    height: 15em;
+    width: 25em;
+    height: 13em;
     border-radius: 5%;
     box-shadow: 10px 10px 6px rgb(99, 99, 99);
   }
@@ -79,83 +80,21 @@ section{
     margin-right: 14rem;
 }
 
-.bloc-presentation>h2{
+.bloc>h2{
     margin-left: 2rem;
     margin-bottom: 1rem;
     color: rgb(255, 0, 0);
 }
 
-.bloc-presentation>h4{
+.bloc>h4{
     margin-bottom: 1rem;
     margin-left: 2rem;
     margin-right: 0.5rem;
     color: rgb(255, 0, 0);
 }
 
-.bloc{
-  width: 50rem;
-  margin-left: 5%;
-}
-
-  .project{
-    width: 100%;
-    height: 100%;
-  }
-
-  
-  .flex {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  .flex2{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .diapo{
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-  }
-  
-  #nav-droite, #nav-gauche{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(255, 0, 0);
-    font-size: 3em;
-  }
-  
-  #nav-droite{
-    right: 10px;
-  }
-  #nav-gauche{
-    left: 20px;
-  }
-  
-  .elements{
-    display: flex;
-    transition: 1s linear;
-  }
-  
-  .element{
-    flex: 1 0 100%;
-    position: relative;
-  }
-  
-  .element > img{
-    width: 100%;
-    height: 100%;
-  }
-  
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  .bloc{
+    .image{
         margin-left: 0rem;
         width: 20rem;
         height: 11rem;
@@ -170,7 +109,7 @@ section{
         font-size: small;
     }
     
-    .bloc-presentation {
+    .bloc {
         margin-top: 5rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
@@ -188,14 +127,14 @@ section{
         margin-right: 1rem;
     }
 
-    .bloc-presentation>h2{
+    .bloc>h2{
         margin-left: 1rem;
         margin-bottom: 0.4rem;
         color: rgb(255, 0, 0);
         font-size: 1rem;    
     }
     
-    .bloc-presentation>h4{
+    .bloc>h4{
         margin-bottom: 0.4rem;
         margin-left: 1rem;
         margin-right: 0.5rem;
@@ -205,7 +144,7 @@ section{
 }
 
 @media screen and (min-width: 480px) and (max-width: 500px) {
-  .bloc{
+    .image{
         margin-left: 1rem;
         width: 19rem;
         height: 12rem;
@@ -220,7 +159,7 @@ section{
         font-size: small;
     }
     
-    .bloc-presentation {
+    .bloc {
         margin-top: 5rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
@@ -238,14 +177,14 @@ section{
         margin-right: 1rem;
     }
 
-    .bloc-presentation>h2{
+    .bloc>h2{
         margin-left: 1rem;
         margin-bottom: 0.4rem;
         color: rgb(255, 0, 0);
         font-size: 0.7rem;
     }
     
-    .bloc-presentation>h4{
+    .bloc>h4{
         margin-bottom: 0.4rem;
         margin-left: 1rem;
         margin-right: 0.5rem;
@@ -255,7 +194,7 @@ section{
 }
 
 @media screen and (min-width: 500px) and (max-width: 580px) {
-  .bloc{
+    .image{
         margin-left: 1rem;
         width: 22rem;
         height: 17rem;
@@ -268,7 +207,7 @@ section{
         text-align: justify;
     }
     
-    .bloc-presentation {
+    .bloc {
         margin-top: 2.2rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
@@ -293,14 +232,14 @@ section{
         text-align: justify;
     }
 
-    .bloc-presentation>h2{
+    .bloc>h2{
         margin-left: 1rem;
         margin-bottom: 0.3rem;
         color: rgb(255, 0, 0);
         font-size: 0.7rem;
     }
     
-    .bloc-presentation>h4{
+    .bloc>h4{
         margin-bottom: 0.3rem;
         margin-left: 1rem;
         margin-right: 0.5rem;
@@ -310,7 +249,7 @@ section{
 }
 
 @media screen and (min-width: 580px) and (max-width: 690px) {
-  .bloc{
+    .image{
         margin-left: 1rem;
         width: 28rem;
         height: 20rem;
@@ -323,7 +262,7 @@ section{
         text-align: justify;
     }
     
-    .bloc-presentation {
+    .bloc {
         margin-top: 2.2rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
@@ -348,14 +287,14 @@ section{
         text-align: justify;
     }
 
-    .bloc-presentation>h2{
+    .bloc>h2{
         margin-left: 2rem;
         margin-bottom: 0.5rem;
         color: rgb(255, 0, 0);
         font-size: 1rem;
     }
     
-    .bloc-presentation>h4{
+    .bloc>h4{
         margin-bottom: 0.4rem;
         margin-left: 2rem;
         margin-right: 0.5rem;
@@ -366,7 +305,7 @@ section{
 }
 
 @media screen and (min-width: 690px) and (max-width: 860px) {
-  .bloc{
+    .image{
         margin-left: 1rem;
         width: 38rem;
         height: 26rem;
@@ -379,7 +318,7 @@ section{
         text-align: justify;
     }
     
-    .bloc-presentation {
+    .bloc {
         margin-top: 2.2rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
@@ -404,14 +343,14 @@ section{
         text-align: justify;
     }
 
-    .bloc-presentation>h2{
+    .bloc>h2{
         margin-left: 1rem;
         margin-bottom: 0.3rem;
         color: rgb(255, 0, 0);
         font-size: 0.7rem;
     }
     
-    .bloc-presentation>h4{
+    .bloc>h4{
         margin-bottom: 0.3rem;
         margin-left: 1rem;
         margin-right: 0rem; 
@@ -419,5 +358,3 @@ section{
         font-size: 0.6rem;
     }
 }
-
-  
