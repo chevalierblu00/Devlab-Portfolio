@@ -33,7 +33,13 @@ section{
     z-index: 0;
 }
 
-
+.reseaux > image{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: 10rem;
+  align-items: center;
+  margin-left: 10rem;
+}
 
 div>h1{
     color: rgb(229, 9, 20);
@@ -55,7 +61,7 @@ p{
 }
 
 .box {
-  margin-left: 20%;
+  margin-left: 3rem;
   background-color: transparent;
   width: 25em;
   height: 25em;
@@ -107,14 +113,14 @@ p{
 }
 
 .bloc {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 3rem;
+  margin-right: 3rem;
   background-color: rgb(209, 209, 209);
   grid-column: 3;
   width: 25em;
   height: 25em;
   border-radius: 5%;
-  box-shadow: 10px 10px 6px rgb(97, 89, 89);
+  box-shadow: 10px 10px 6px rgb(97 89 89);
 }
 
 .image{
@@ -231,9 +237,11 @@ p{
 
 #nav-droite{
   right: 10px;
+  opacity: 50%;
 }
 #nav-gauche{
   left: 20px;
+  opacity: 50%;
 }
 
 .elements{
@@ -377,9 +385,3 @@ ma
 }
 }
 
-.reseaux{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 5rem;
-}

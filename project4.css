@@ -63,13 +63,13 @@ section{
 }
 
 .bloc {
-    margin-top: 2rem;
+    margin-top: 0rem;
     background-color: rgb(209, 209, 209);
     grid-column: 3;
     width: 25em;
-    height: 13em;
+    height: 17em;
     border-radius: 5%;
-    box-shadow: 10px 10px 6px rgb(99, 99, 99);
+    box-shadow: 10px 10px 6px rgb(99 99 99);
   }
 
   .presentation{
@@ -78,6 +78,10 @@ section{
     flex-direction: row;
     margin-left: 14rem;
     margin-right: 14rem;
+  }
+
+p{
+    margin-left: 2rem;
 }
 
 .bloc>h2{
@@ -114,7 +118,7 @@ section{
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 11rem;
-        height: 6rem;
+        height: 8.5rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
@@ -125,6 +129,11 @@ section{
         flex-direction: column;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    p{
+        font-size: 0.6rem;
+        margin-left: 1rem;
     }
 
     .bloc>h2{
@@ -177,6 +186,11 @@ section{
         margin-right: 1rem;
     }
 
+    p{
+        margin-left: 1rem;
+        font-size: 0.5rem;
+    }
+
     .bloc>h2{
         margin-left: 1rem;
         margin-bottom: 0.4rem;
@@ -208,17 +222,17 @@ section{
     }
     
     .bloc {
-        margin-top: 2.2rem;
+        margin-top: 0rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 5rem;
+        height: 7.4rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
     
       .presentation{
-        margin-top: -1rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         margin-left: 1rem;
@@ -230,6 +244,11 @@ section{
         margin-left: 1rem;
         margin-right: 1rem;
         text-align: justify;
+    }
+
+    p{
+        margin-left: 1rem;
+        font-size: 0.5rem;
     }
 
     .bloc>h2{
@@ -263,17 +282,17 @@ section{
     }
     
     .bloc {
-        margin-top: 2.2rem;
+        margin-top: 0rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 8rem;
+        height: 11rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
     
       .presentation{
-        margin-top: -1rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         margin-left: 1rem;
@@ -285,6 +304,11 @@ section{
         margin-left: 1rem;
         margin-right: 1rem;
         text-align: justify;
+    }
+
+    p{
+        margin-left: 2rem;
+        font-size: 0.7rem;
     }
 
     .bloc>h2{
@@ -319,11 +343,11 @@ section{
     }
     
     .bloc {
-        margin-top: 2.2rem;
+        margin-top: 0rem; 
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 6rem;
+        height: 8rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
@@ -341,6 +365,11 @@ section{
         margin-left: 1rem;
         margin-right: 2rem;
         text-align: justify;
+    }
+
+    p{
+        margin-left: 1rem;
+        font-size: 0.6rem;
     }
 
     .bloc>h2{

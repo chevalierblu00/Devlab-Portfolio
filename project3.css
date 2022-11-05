@@ -134,9 +134,11 @@ section{
   
   #nav-droite{
     right: 10px;
+    opacity: 50%;
   }
   #nav-gauche{
     left: 20px;
+    opacity: 50%;
   }
   
   .elements{
@@ -171,17 +173,17 @@ section{
     }
     
     .bloc-presentation {
-        margin-top: 5rem;
+        margin-top: 0rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 11rem;
-        height: 6rem;
+        height: 7rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
     
       .presentation{
-        margin-top: -3rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         margin-left: 1rem;
@@ -221,17 +223,17 @@ section{
     }
     
     .bloc-presentation {
-        margin-top: 5rem;
+        margin-top: 0rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 11rem;
-        height: 6rem;
+        height: 7rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
     
       .presentation{
-        margin-top: -3rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         margin-left: 1rem;
@@ -269,17 +271,17 @@ section{
     }
     
     .bloc-presentation {
-        margin-top: 2.2rem;
+        margin-top: 0rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 5rem;
+        height: 6rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
     
       .presentation{
-        margin-top: -1rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         margin-left: 1rem;
@@ -324,17 +326,17 @@ section{
     }
     
     .bloc-presentation {
-        margin-top: 2.2rem;
+        margin-top: 0rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 8rem;
+        height: 9rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
     
       .presentation{
-        margin-top: -1rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         margin-left: 1rem;
@@ -380,17 +382,17 @@ section{
     }
     
     .bloc-presentation {
-        margin-top: 2.2rem;
+        margin-top: 0rem;
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 6rem;
+        height: 7rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
     
       .presentation{
-        margin-top: 0rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         margin-left: 1rem;

@@ -67,7 +67,7 @@ section{
     background-color: rgb(209, 209, 209);
     grid-column: 3;
     width: 25em;
-    height: 13em;
+    height: 14em;
     border-radius: 5%;
     box-shadow: 10px 10px 6px rgb(99, 99, 99);
   }
@@ -114,7 +114,7 @@ section{
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 11rem;
-        height: 6rem;
+        height: 7.5rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
@@ -164,7 +164,7 @@ section{
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 11rem;
-        height: 6rem;
+        height: 7rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
@@ -212,7 +212,7 @@ section{
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 5rem;
+        height: 6rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
@@ -267,7 +267,7 @@ section{
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 8rem;
+        height: 9rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
@@ -323,7 +323,7 @@ section{
         background-color: rgb(209, 209, 209);
         grid-column: 3;
         width: 12rem;
-        height: 6rem;
+        height: 7rem;
         border-radius: 5%;
         box-shadow: 10px 10px 6px rgb(99 99 99);
       }
