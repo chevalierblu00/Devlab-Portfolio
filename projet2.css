@@ -53,6 +53,7 @@ video{
     margin-left: 4rem;
     width: 46rem;
     height: 30rem;
+    cursor: pointer;
 }
 
 section{
