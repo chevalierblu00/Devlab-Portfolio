@@ -1,361 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-
-*{
+body {
+    font-family: 'San Francisco', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'europa';
-    text-decoration: none;
-}
-
-.Portfolio{
-    text-align: center;
-    cursor: pointer;
-}
-
-body{
-    background-color: #373737;
-    color: rgb(216, 216, 216);
-}
-
-header{
-    display: flex;
-    justify-content: space-around;
-    padding: 1% 0;
-}
-
-header nav{
-    align-self: center;
-}
-
-header nav ul{
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    margin-right: 20px;
-    border-bottom: 1px solid transparent;
-    transition: 0.4s ease-in-out;
-}
-
-header nav ul li a:hover{
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-header h1{
-    color: rgb(255, 0, 0);
-}
-
-video{
-    margin-left: 4rem;
-    width: 46rem;
-    height: 30rem;
-    cursor: pointer;
-}
-
-section{
-    margin-top: 3rem;
-    margin-left: 14rem;
-    margin-right: 14rem;
-    text-align: justify;
-}
-
-.bloc {
-    margin-top: 2rem;
-    background-color: rgb(209, 209, 209);
-    grid-column: 3;
-    width: 25em;
-    height: 14em;
-    border-radius: 5%;
-    box-shadow: 10px 10px 6px rgb(99, 99, 99);
+    background: #f1f1f1;
   }
 
-  .presentation{
-    margin-top: 3rem;
+header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  .presentation {
     display: flex;
-    flex-direction: row;
-    margin-left: 14rem;
-    margin-right: 14rem;
-}
+    justify-content: center;
+    align-items: center;
+  }
+  
+    .bloc {
+        padding: 20px;
+        width: 300px;
+        margin-right: 20px;
+    }
 
-.bloc>h2{
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    color: rgb(255, 0, 0);
-}
+  .bloc_texte {
+    padding-top: 20px;
+    width: 300px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .project {
+    width: 70%;
+    border-radius: 1rem;
+  }
+  
 
-.bloc>h4{
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    margin-right: 0.5rem;
-    color: rgb(255, 0, 0);
-}
+  .p{
+    text-align: left;
+  }
 
-@media screen and (min-width: 0px) and (max-width: 480px) {
-    video{
-        margin-left: 0rem;
-        width: 20rem;
-        height: 11rem;
-        margin-top: 1rem;
+  @media only screen and (max-width: 900px) {
+    body {
+        font-size: 12px;
     }
     
-    section{
-        margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1.5rem;
-        text-align: justify;
-        font-size: small;
+    header {
+        padding: 10px;
+    }
+    
+    section {
+        margin: 10px;
     }
     
     .bloc {
-        margin-top: 5rem;
-        background-color: rgb(209, 209, 209);
-        grid-column: 3;
-        width: 11rem;
-        height: 7.5rem;
-        border-radius: 5%;
-        box-shadow: 10px 10px 6px rgb(99 99 99);
-      }
-    
-      .presentation{
-        margin-top: -3rem;
-        display: flex;
-        flex-direction: column;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .bloc>h2{
-        margin-left: 1rem;
-        margin-bottom: 0.4rem;
-        color: rgb(255, 0, 0);
-        font-size: 1rem;    
+        width: 200px;
+        margin-right: 10px;
     }
     
-    .bloc>h4{
-        margin-bottom: 0.4rem;
-        margin-left: 1rem;
-        margin-right: 0.5rem;
-        color: rgb(255, 0, 0);
-        font-size: 0.6rem;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 500px) {
-    video{
-        margin-left: 1rem;
-        width: 19rem;
-        height: 12rem;
-        margin-top: 4.5rem;
+    .bloc_texte {
+        width: 200px;
+        margin-right: 10px;
     }
     
-    section{
-        margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        text-align: justify;
-        font-size: small;
-    }
-    
-    .bloc {
-        margin-top: 5rem;
-        background-color: rgb(209, 209, 209);
-        grid-column: 3;
-        width: 11rem;
-        height: 7rem;
-        border-radius: 5%;
-        box-shadow: 10px 10px 6px rgb(99 99 99);
-      }
-    
-      .presentation{
-        margin-top: -3rem;
-        display: flex;
-        flex-direction: row;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .bloc>h2{
-        margin-left: 1rem;
-        margin-bottom: 0.4rem;
-        color: rgb(255, 0, 0);
-        font-size: 0.7rem;
-    }
-    
-    .bloc>h4{
-        margin-bottom: 0.4rem;
-        margin-left: 1rem;
-        margin-right: 0.5rem;
-        color: rgb(255, 0, 0);
-        font-size: 0.5rem;
-    }
-}
-
-@media screen and (min-width: 500px) and (max-width: 580px) {
-    video{
-        margin-left: 1rem;
-        width: 22rem;
-        height: 17rem;
-    }
-    
-    section{
-        margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        text-align: justify;
-    }
-    
-    .bloc {
-        margin-top: 2.2rem;
-        background-color: rgb(209, 209, 209);
-        grid-column: 3;
-        width: 12rem;
-        height: 6rem;
-        border-radius: 5%;
-        box-shadow: 10px 10px 6px rgb(99 99 99);
-      }
-    
-      .presentation{
-        margin-top: -1rem;
-        display: flex;
-        flex-direction: row;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    section{
-        margin-top: 3rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        text-align: justify;
-    }
-
-    .bloc>h2{
-        margin-left: 1rem;
-        margin-bottom: 0.3rem;
-        color: rgb(255, 0, 0);
-        font-size: 0.7rem;
-    }
-    
-    .bloc>h4{
-        margin-bottom: 0.3rem;
-        margin-left: 1rem;
-        margin-right: 0.5rem;
-        color: rgb(255, 0, 0);
-        font-size: 0.5rem;
-    }
-}
-
-@media screen and (min-width: 580px) and (max-width: 690px) {
-    video{
-        margin-left: 1rem;
-        width: 28rem;
-        height: 20rem;
-    }
-    
-    section{
-        margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 1.5rem;
-        text-align: justify;
-    }
-    
-    .bloc {
-        margin-top: 2.2rem;
-        background-color: rgb(209, 209, 209);
-        grid-column: 3;
-        width: 12rem;
-        height: 9rem;
-        border-radius: 5%;
-        box-shadow: 10px 10px 6px rgb(99 99 99);
-      }
-    
-      .presentation{
-        margin-top: -1rem;
-        display: flex;
-        flex-direction: row;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    section{
-        margin-top: 3rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        text-align: justify;
-    }
-
-    .bloc>h2{
-        margin-left: 2rem;
-        margin-bottom: 0.5rem;
-        color: rgb(255, 0, 0);
-        font-size: 1rem;
-    }
-    
-    .bloc>h4{
-        margin-bottom: 0.4rem;
-        margin-left: 2rem;
-        margin-right: 0.5rem;
-        color: rgb(255, 0, 0);
-        font-size: 0.7rem;
-    }
-    
-}
-
-@media screen and (min-width: 690px) and (max-width: 860px) {
-    video{
-        margin-left: 1rem;
-        width: 38rem;
-        height: 26rem;
-    }
-    
-    section{
-        margin-top: 3rem;
-        margin-left: 1rem;
-        margin-right: 2rem;
-        text-align: justify;
-    }
-    
-    .bloc {
-        margin-top: 2.2rem;
-        background-color: rgb(209, 209, 209);
-        grid-column: 3;
-        width: 12rem;
-        height: 7rem;
-        border-radius: 5%;
-        box-shadow: 10px 10px 6px rgb(99 99 99);
-      }
-    
-      .presentation{
-        margin-top: 0rem;
-        display: flex;
-        flex-direction: row;
-        margin-left: 1rem;
-        margin-right: 2rem;
-    }
-
-    section{
-        margin-top: 3rem;
-        margin-left: 1rem;
-        margin-right: 2rem;
-        text-align: justify;
-    }
-
-    .bloc>h2{
-        margin-left: 1rem;
-        margin-bottom: 0.3rem;
-        color: rgb(255, 0, 0);
-        font-size: 0.7rem;
-    }
-    
-    .bloc>h4{
-        margin-bottom: 0.3rem;
-        margin-left: 1rem;
-        margin-right: 0rem; 
-        color: rgb(255, 0, 0);
-        font-size: 0.6rem;
+    .project {
+        width: 70%;
     }
 }
