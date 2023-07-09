@@ -37,10 +37,7 @@ header {
     margin-right: 20px;
   }
   
-  .project {
-    width: 70%;
-  }
-  
+ 
 
 
 .bloc{
@@ -80,17 +77,15 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 3em;
   }
   
   #nav-droite{
     right: 10px;
-    opacity: 50%;
   }
   #nav-gauche{
     left: 20px;
-    opacity: 50%;
   }
   
   .elements{

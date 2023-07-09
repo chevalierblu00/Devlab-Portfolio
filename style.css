@@ -153,17 +153,15 @@ width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 17);
     font-size: 3em;
   }
   
   #nav-droite{
     right: 10px;
-    opacity: 50%;
   }
   #nav-gauche{
     left: 20px;
-    opacity: 50%;
   }
   
   .elements{
