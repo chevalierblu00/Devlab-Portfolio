@@ -58,11 +58,10 @@ section {
   
   .bloc_texte {
       width: 100%;
-      
   }
   
   .project {
-      width: 70%;
+      width: 100%;
   }
 
   .presentation {
