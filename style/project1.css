@@ -49,29 +49,27 @@ section {
 }
 
 @media only screen and (max-width: 900px) {
-  body {
-      font-size: 12px;
-  }
   
-  header {
-      padding: 10px;
-  }
-  
-  section {
-      margin: 10px;
-  }
   
   .bloc {
-      width: 200px;
+      width: 100%;
       margin-right: 10px;
   }
   
   .bloc_texte {
-      width: 200px;
-      margin-right: 10px;
+      width: 100%;
+      
   }
   
   .project {
       width: 70%;
   }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
