@@ -215,13 +215,21 @@ width: 100%;
   }
 
   .image{
-    margin-left: 2.5rem;
+    margin-left: 5%;
     width: 90%;
     height: auto;
   }
 
   .bloc {
-    width: 50rem;
-    margin-left: 5%;
-}
+    width: 100%;
+    margin: 0%;
+  }
+
+  .diapo {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10%;
+  }
 }
