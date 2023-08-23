@@ -209,7 +209,6 @@ p {
   
   .carte h1 {
     margin-top: 10px;
-    font-size: 100%;
   }
 
   .carte {
@@ -220,10 +219,9 @@ p {
     color: rgb(0, 0, 0);
   }
 
-  
 
   #compétance {
-    margin: 8rem;
+    margin: 0%;
   }
 
   #project {
