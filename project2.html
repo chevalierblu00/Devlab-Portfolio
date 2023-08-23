@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/project1.css">
+    <link rel="stylesheet" href="style/project2.css">
     <link rel="stylesheet" href="https://use.typekit.net/leo4oek.css">
-    <meta name="description" content="Présentation d'un projet de première année qui consiste à réaliser un jeu vidéo">
+    <meta name="description" content="Présentation d'un projet de deuxième année qui consiste en un site web informatif sur un lieu">
     <title>Project2</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>Portfolio</h1></a>
+        <div class="navigation">
+            <nav>
+                <a href="project4.html">précédent </a>
+                <p><a href="index.html">projets</a></p>
+                <a href="project5.html">suivant</a>
+            </nav>
+          </div>
     </header>
     <main>
         <section class="presentation">
-            <div class="bloc">
-                <div class="bloc_texte"><!-- div de présentation du projet -->
-                    <h2>INFOS PROJET</h2>
-                    <h4>Année: 2022</h4>
-                    <h4>Catégorie: Jeux vidéo</h4>
-                    <h4>Sujet: Créer un Jeu vidéo</h4>    
-                    <h4>Logiciel: Unity</h4>  
-                    <h4>Langage: C#</h4>  
-                </div>
+            <div class="bloc_texte">
+                <h2>INFOS PROJET</h2>
+                <h4>Année: 2023</h4>
+                <h4>Catégorie: Développement web</h4>
+                <h4>Sujet: API</h4>
+                <h4>Logiciel: Visual Studio Code</h4>
+                <h4>Langage: Vue.js</h4>
+                <p><a href="https://js-a2-dripdrip-poke-api.vercel.app/">VISITER LE SITE</a></p>
                 <div>
-                    <p class="p">Ce projet scolaire consiste en la réalisation d'un jeu vidéo. La première étape consiste à réfléchir à l'univers et à la trame scénaristique de notre jeu puis, j'ai réalisé en pixel art le personnage, les ennemis et le décor. Une fois les éléments mis en place, j'ai dû les importer dans le logiciel Unity et coder en C# pour qu'ils interagissent entre eux et avec les touches pressées par le joueur.</p>
+                    <p class="p">Ce projet scolaire avait pour objectif de nous initier aux API. L'idée était de reproduire un Pokédex en affichant uniquement les dix premiers Pokémons de l'API Pokémon. De plus, nous devions être en mesure de créer des équipes et d'ajouter des mini-jeux.</p>
                 </div>
             </div>
-            <video src="./video/illustration_jeux_video.mp4" class="project" preload="auto" controls><!-- vidéo de présentation du projet -->
-            </video>
+            <img src="images/pokemon.png" alt="Image d'illustration du projet" class="image">
         </section>
     </main>
 </body>

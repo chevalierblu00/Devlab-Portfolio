@@ -4,121 +4,114 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="https://use.typekit.net/leo4oek.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <meta name="description" content="Voici le portfolio de Martin GASPARD, étudiant en 2ème année à Léonard de Vinci dans l'axe CDI">
   <title>Portfolio</title>
 </head>
 <body>
-  <a href="index.html"><h1>Portfolio</h1></a>
+  <div class="navigation">
+    <nav>
+        <a data-target="présentation">présentation</a>
+        <a data-target="compétance">compétences</a>
+        <a data-target="project">projets</a>
+    </nav>
+  </div>
 
-  <div class="container">
-    <div class="appear" data-delai="0">
-      <div class="grid">
-        <img src="./images/Groupe4-8.jpg" alt="Photo de moi" class="image">
-        <div class="placement">
-          <p>Bonjour,<br>je m'appelle Martin GASPARD. Je suis étudiant en 2ème année de bachelor Coding & Digital Innovation à L'IIM. L'IIM me permet de me former dans le monde passionnant du digital. J'aime coder et développer des sites web, les jeux vidéo, les sciences, je pratique le judo et occasionnellement le surf. Ce portfolio présente mes projets scolaires et personnels.</p>
-          <a href="https://www.linkedin.com/in/martin-gaspard-b4596b223/"><img src="images/LinkedIn_logo_initials.png" alt="Image 1" class="reseaux"></a>
-          <a href="https://github.com/chevalierblu00"><img src="images/25231.png" alt="Image 1" class="reseaux"></a>
-        </div>
+  <div class="container" id="présentation" >
+    <div class="grid">
+      <img src="./images/Groupe4-8.jpg" alt="Photo de moi" class="image">
+      <div class="placement">
+        <p>Bonjour,<br>je m'appelle Martin GASPARD. Je suis étudiant en 3ème année de bachelor Coding & Digital Innovation à L'IIM. L'IIM me permet de me former dans le monde passionnant du digital. J'aime coder et développer des sites web, les jeux vidéo, les sciences, je pratique occasionnellement le surf. Ce portfolio présente mes projets scolaires et personnels.</p>
+        <a href="https://www.linkedin.com/in/martin-gaspard-b4596b223/"><img src="images/LinkedIn_logo_initials.png" alt="Image 1" class="reseaux"></a>
+        <a href="https://github.com/chevalierblu00"><img src="images/25231.png" alt="Image 1" class="reseaux"></a>
       </div>
     </div>
   </div>
 
-  <div class="appear grid2" data-delai="0">
-    <div class="div2_placement">
-      <h1>Compétences</h1>
-      <div class="progressbar-wrapper">
-        <div class="progressbar css">CSS</div>
+  <div id="compétance">
+    <div class="grid2">
+      <div class="carte">
+        <img src="images/CSS_icon.png" alt="Image">
+        <h1>CSS</h1>
       </div>
-      <div class="progressbar-wrapper">
-        <div class="progressbar html">HTML</div>
+      <div class="carte">
+        <img src="images/HTML_icon.png" alt="Image">
+        <h1>HTML</h1>
       </div>
-      <div class="progressbar-wrapper">
-        <div class="progressbar js">JS</div>
+      <div class="carte">
+        <img src="images/js_icon.png" alt="Image">
+        <h1>JS</h1>
       </div>
-      <div class="progressbar-wrapper">
-        <div class="progressbar python">Python</div>
+      <div class="carte">
+        <img src="images/php_logo.png" alt="Image">
+        <h1>PHP</h1>
       </div>
-      <div class="progressbar-wrapper">
-        <div class="progressbar php">PHP</div>
+      <div class="carte">
+        <img src="images/wordpress_logo.avif" alt="Image">
+        <h1>Wordpress</h1>
       </div>
-    </div>
-  </div>
-
-  <div class="appear" data-delai="0">
-    <h1 class="Project">Projets</h1>
-    <div class="bloc">
-      <div class="diapo"><!-- mise en place de la div pour la diapo -->
-        <div class="elements"><!-- mise en place de la div qui contient tous les projets -->
-          
-          <div class="element active"><!-- mise en place de la div qui contient le premier projet -->
-            <a href="project.html"><img src="images/Danse_Moment.jpg" alt="Image 1" class="project"></a>
-            <a href="project.html"><div class="caption">
-              <h2>Danse</h2>
-            </div></a>
-          </div>
-
-          <div class="element"><!-- mise en place de la div qui contient le deuxième projet -->
-            <a href="project2.html"><img src="images/illustration_jeux.jpg" alt="Image 1" class="project"></a>
-            <a href="project2.html"><div class="caption">
-              <h2>Jeu vidéo</h2>
-            </div></a>
-          </div>
-          <div class="element"><!-- mise en place de la div qui contient le troisième projet -->
-            <a href="project3.html"><img src="https://img.lemde.fr/2020/09/21/33/0/766/383/768/384/75/0/0316a4d_46866764-dash-discord.jpg" alt="Image 1" class="project"></a>
-            <a href="project3.html"><div class="caption">
-              <h2>bot discord</h2>
-            </div></a>
-          </div>
-
-          <div class="element"><!-- mise en place de la div qui contient le quatrième projet -->
-            <a href="project4.html"><img src="images/Vincennes_-_Chateau_02.jpg" alt="Image 1" class="project"></a>
-            <a href="project4.html"><div class="caption">
-              <h2>site de présentation</h2>
-            </div></a>
-          </div>
-
-          <div class="element"><!-- mise en place de la div qui contient le cinquième projet -->
-            <a href="project5.html"><img src="images/vue_js.png" alt="Image 1" class="project"></a>
-            <a href="project5.html"><div class="caption">
-              <h2>système de contact téléphonique</h2>
-            </div></a>
-          </div>
-
-          <div class="element"><!-- mise en place de la div qui contient le cinquième projet -->
-            <a href="project6.html"><img src="images/pokemon.png" alt="Image 1" class="project"></a>
-            <a href="project6.html"><div class="caption">
-              <h2>API</h2>
-            </div></a>
-          </div>
-
-          <div class="element"><!-- mise en place de la div qui contient le cinquième projet -->
-            <a href="project7.html"><img src="images/BAP1.png" alt="Image 1" class="project"></a>
-            <a href="project7.html"><div class="caption">
-              <h2>Bourse aux projets ecologica</h2>
-            </div></a>
-          </div>
-
-          <div class="element"><!-- mise en place de la div qui contient le cinquième projet -->
-            <a href="project8.html"><img src="images/BAP2.png" alt="Image 1" class="project"></a>
-            <a href="project8.html"><div class="caption">
-              <h2>Bourse aux projets chaville</h2>
-            </div></a>
-          </div>
-
-        </div>
-        <i id="nav-gauche" class="fas la-chevron-left"></i><!-- pour defiler a gauche -->
-        <i id="nav-droite" class="fas la-chevron-right"></i><!-- pour defiler a droite -->
+      <div class="carte">
+        <img src="images/symfony_logo.png" alt="Image">
+        <h1>symfony</h1>
+      </div>
+      <div class="carte">
+        <img src="images/SQL.png" alt="Image">
+        <h1>SQL</h1>
+      </div>
+      <div class="carte">
+        <img src="images/scss.png" alt="Image">
+        <h1>SQL</h1>
+      </div>
+      <div class="carte">
+        <img src="images/Tailwind.png" alt="Image">
+        <h1>Tailwind</h1>
+      </div>
+      <div class="carte">
+        <img src="images/Node_js.png" alt="Image">
+        <h1>Node.js</h1>
+      </div>
+      <div class="carte">
+        <img src="images/Vue_js.png" alt="Image">
+        <h1>Vue.js</h1>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-  <script src="./script.js"></script>
-  <script src='defilements.js'></script>
+<div class="bloc" id="project">
+  <a href="project.html">
+    <div class="project carte">
+      <img src="images/illustration_jeux.jpg" alt="Image 1">
+      <p>jeu vidéo</p>
+    </div>
+  </a>
+  <a href="project3.html">
+    <div class="project carte">
+      <img src="images/BAP1.png" alt="Image 2">
+      <p>site internet pour l'école Ecologica</p>
+    </div>
+  </a>
+  <a href="project4.html">
+    <div class="project carte">
+      <img src="images/BAP2.png" alt="Image 3">
+      <p>site internet pour la ville de Chaville</p>
+    </div>
+  </a>
+  <a href="project2.html">
+    <div class="project carte">
+      <img src="images/pokemon.png" alt="Image 4">
+      <p>Pokédex</p>
+    </div>
+  </a>
+  <a href="project5.html">
+    <div class="project carte">
+      <img src="images/site.JPG" alt="Image 4">
+      <p>site internet pour la présentation d'un lieu</p>
+    </div>
+  </a>
+</div>
+
+  <script src="js/navigation.js"></script>
+
 </body>
 </html>

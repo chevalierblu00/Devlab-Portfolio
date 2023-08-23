@@ -1,22 +1,50 @@
 body {
   font-family: 'San Francisco', sans-serif;
+  background-image: url(../images/fond.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
   margin: 0;
-  padding: 0;
-  background: #f1f1f1;
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  text-align: center;
 }
 
-header a {
-  color: black;
-  text-decoration: none;
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  border-radius: 25px;
+  background-color:#457f7694;
+  position: fixed;
+  top: 0; 
+  z-index: 999;
 }
+
+.navigation {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation a {
+  margin: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation p{
+  font-weight: bold;
+}
+
 
 section {
-  margin: 20px;
+  margin: 100px 20px 0px 20px;
 }
 
 .presentation {
@@ -34,7 +62,7 @@ section {
 .bloc_texte {
   padding-top: 20px;
   width: 300px;
-  text-align: center;
+  text-align: left;
   margin-right: 20px;
 }
 
@@ -43,9 +71,24 @@ section {
   border-radius: 1rem;
 }
 
-
 .p{
   text-align: left;
+}
+
+.ajustement{
+  margin-top: 4%;
+}
+
+.ajustement_bloc{
+  padding: 0px 20px 20px 20px;
+}
+
+.ajustement_texte{
+  padding-top: 0%;
+}
+
+.ajustement_h{
+  margin-top: 0%;
 }
 
 @media only screen and (max-width: 900px) {

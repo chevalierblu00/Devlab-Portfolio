@@ -1,14 +1,21 @@
-.appear{
-  opacity:0;
-  position: relative;
-  top: 100px;
-}
-
-body {
-  font-family: 'San Francisco', sans-serif;
+/* Reset CSS */
+* {
   margin: 0;
   padding: 0;
-  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: 'San Francisco', sans-serif;
+  background-image: url(../images/fond.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+::-webkit-scrollbar{
+  width: 0%;
 }
 
 a {
@@ -18,31 +25,46 @@ a {
 
 h1 {
   font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  margin: 40px 0;
 }
 
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  border-radius: 25px;
+  background-color:#457f7694;
+  position: fixed;
+  top: 0; 
+  z-index: 999;
+}
+
+.navigation {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation a {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page content container */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 
+/* Grid layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-}
-
-.grid2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.div2_placement{
-  grid-column: 2;
-  grid-row: 1 ;
 }
 
 .image {
@@ -63,173 +85,157 @@ h1 {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: white;
+  text-align: left;
 }
 
+/* Social icons */
 .reseaux {
-width: 50px;
-margin: 10px;
-display: inline-block;
+  width: 50px;
+  margin: 10px;
+  display: inline-block;
 }
 
-.progressbar-wrapper {
-margin: 20px 0;
-text-align: center;
+/* Competence section */
+#compétance {
+  margin: 10rem 10rem 0rem 10rem;
 }
 
-.progressbar {
-width: 90%;
-height: 30px;
-background-color: #f5f5f5;
-border-radius: 5px;
-overflow: hidden;
-display: inline-block;
-margin: 0 auto;
-color: white;
-font-size: 18px;
-line-height: 30px;
-text-align: center;
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin-bottom: 5%;
 }
 
-.css {
-background-color: #3498db;
+.carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7ffd4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
 }
 
-.html {
-background-color: #f1c40f;
+.carte img {
+  max-width: 100px;
+  margin-bottom: 10px;
 }
 
-.js {
-background-color: #e74c3c;
+/* Project section */
+#project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 10% 10% 0% 10%;
+  justify-items: center;
 }
 
-.python {
-background: #2ecc71;
-}
 
-.php {
-background-color: #00A8E8;
-}
-
-/* Add some hover effect to the progress bars */
-.progressbar-wrapper:hover .progressbar {
-width: 100%;
-}
-
-.bloc{
-  width: 50rem;
-  margin-left: 25%;
-}
-
-  .project{
-    width: 100%;
-    height: 100%;
-  }
-
-  
-  .flex {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  .flex2{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .diapo{
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-    border-radius: 1rem;
-    margin-bottom: 3rem;
-  }
-  
-  #nav-droite, #nav-gauche{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(0, 120, 8);
-    font-size: 3em;
-  }
-  
-  #nav-droite{
-    right: 10px;
-  }
-  #nav-gauche{
-    left: 20px;
-  }
-  
-  .elements{
-    display: flex;
-    transition: 1s linear;
-  }
-  
-  .element{
-    flex: 1 0 100%;
-    position: relative;
-  }
-  
-  .element > img{
-    width: 100%;
-    height: 100%;
-  }
-
-.caption {
-  position: absolute;
-  top: 90%;
-  left: 50%;
+.project {
+  border-radius: 5px;
+  padding: 3px;
   width: 100%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: rgba(255,255,255,0.4);
-  padding: 30px;
+  background-color: #579635a6;
+  position: relative;
+  overflow: hidden;
 }
 
-.project{
+.project img {
+  width: 100%;
+  height: auto;
+  max-width: none; 
+  margin-bottom: 0px;
+}
+
+.project:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1; /* Change opacity to 1 */
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.project:hover p {
+  visibility: visible; 
+  opacity: 1; /* Add opacity to make the text visible */
+  transition: opacity 0.3s, visibility 0.3s; /* Add opacity transition */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.project p {
+  visibility: hidden;
+  opacity: 0; /* Set initial opacity to 0 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 
-@media only screen and (max-width: 900px) {
-  /* Règles CSS spécifiques pour les écrans de 900px ou moins */
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 0.5fr);
-  }
-  .grid2 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .div2_placement {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .placement {
-    grid-column: 1 / 2;
-    grid-row: 2;
-  }
+/* Center-aligned paragraphs */
+p {
+  text-align: center;
+}
 
-  .image{
-    margin-left: 5%;
-    width: 90%;
-    height: auto;
-  }
 
+@media (max-width: 900px) {
+  /* Styles for screens narrower than 900px */
+  
+  .grid,
+  .grid2,
   .bloc {
-    width: 100%;
-    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carte {
+    margin: 10px;
   }
 
-  .diapo {
-    height: auto;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 10%;
+  .placement p {
+    color: rgb(0, 0, 0);
+  }
+
+  .carte {
+    width: 100%;
+  }
+
+  #compétance {
+    margin: 8rem;
+  }
+
+  #project {
+    grid-template-columns: none;
+  }
+
+  /* Disable hover and before styles for .carte */
+  .carte:hover::before {
+    content: none;
+  }
+
+  /* Override styles for project cards */
+  .project p {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    color: rgb(0, 0, 0);
+    z-index: initial;
   }
 }

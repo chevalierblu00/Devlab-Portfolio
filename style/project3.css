@@ -1,13 +1,23 @@
 body {
     font-family: 'San Francisco', sans-serif;
+    background-image: url(../images/fond.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
     margin: 0;
-    padding: 0;
-    background: #f1f1f1;
   }
 
-header {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    text-align: center;
+  }
+  
+  header h1 {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 34px;
+    background-color: #457f7694;
   }
   
   header a {
@@ -33,7 +43,7 @@ header {
 
   .bloc_texte {
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
     margin-right: 20px;
   }
   
