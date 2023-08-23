@@ -223,9 +223,16 @@ p {
     grid-template-columns: none;
   }
 
-  /* Disable hover and before styles for .carte */
-  .carte:hover::before {
-    content: none;
+  .project:before p{
+    visibility: hidden;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+
+  .project:hover p{
+    visibility: hidden;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
   }
 
   /* Override styles for project cards */
