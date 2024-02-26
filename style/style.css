@@ -57,7 +57,7 @@ html {
 /* Page content container */
 .container {
   max-width: 1200px;
-  margin: 10rem auto;
+  margin: 10rem auto 0rem;
 }
 
 /* Grid layout */
@@ -70,9 +70,10 @@ html {
 .image {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  width: 90%;
+  width: 50%;
   height: auto;
   border-radius: 1rem;
+  margin-left: 6rem;
 }
 
 .placement {
@@ -144,12 +145,31 @@ html {
   overflow: hidden;
 }
 
+.docker {
+  border-radius: 5px;
+  padding: 3px;
+  width: 100%;
+  height: 101%;
+  background-color: #579635a6;
+  position: relative;
+  overflow: hidden;
+}
+
+
 .project img {
   width: 100%;
   height: auto;
-  max-width: none; 
+  max-width: none;
   margin-bottom: 0px;
 }
+
+.docker img {
+  width: 100%;
+  height: 101%;
+  max-width: none;
+  margin-bottom: 0px;
+}
+
 
 .project:hover::before {
   content: "";
