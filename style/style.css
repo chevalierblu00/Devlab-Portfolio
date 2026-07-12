@@ -5,19 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Base styles */
-body {
-  font-family: 'San Francisco', sans-serif;
-  background-image: url(../images/fond.png);
-  background-size: 120%;
-  background-repeat: no-repeat;
-  margin: 0;
-}
-
-::-webkit-scrollbar{
-  width: 0%;
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -31,11 +18,17 @@ h1 {
 nav {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
-  border-radius: 25px;
-  background-color:#457f7694;
+  align-items: center;
+  gap: 4px;
+  margin-top: 1.5rem;
+  padding: 6px;
+  border-radius: 999px;
+  background-color: rgba(47, 90, 83, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-sm);
   position: fixed;
-  top: 0; 
+  top: 0;
   z-index: 999;
 }
 
@@ -46,7 +39,21 @@ nav {
 }
 
 .navigation a {
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 0;
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.navigation a.active {
+  background-color: var(--color-surface);
+  color: var(--color-primary-dark);
+  font-weight: 700;
 }
 
 /* Smooth scrolling */
@@ -70,10 +77,11 @@ html {
 .image {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  width: 50%;
+  width: 70%;
   height: auto;
-  border-radius: 1rem;
-  margin-left: 6rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  justify-self: center;
 }
 
 .placement {
@@ -93,6 +101,7 @@ html {
 /* Social icons */
 .reseaux {
   width: 50px;
+  height: 50px;
   margin: 10px;
   display: inline-block;
 }
@@ -115,21 +124,35 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #d7ffd4;
-  border-radius: 10px;
-  padding: 20px;
+  background-color: var(--color-mint);
+  border-radius: var(--radius-md);
+  padding: 28px 20px;
   width: 60%;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.carte:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
 }
 
 .carte img {
-  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   margin-bottom: 10px;
+}
+
+.carte h1 {
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
 /* Project section */
 #project {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   margin: 10% 10% 0% 10%;
   justify-items: center;
@@ -137,55 +160,47 @@ html {
 
 
 .project {
-  border-radius: 5px;
-  padding: 3px;
+  border-radius: var(--radius-md);
+  padding: 0;
   width: 100%;
-  background-color: #579635a6;
+  background-color: var(--color-surface-tint);
+  box-shadow: var(--shadow-sm);
   position: relative;
   overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
-.docker {
-  border-radius: 5px;
-  padding: 3px;
-  width: 100%;
-  height: 101%;
-  background-color: #579635a6;
-  position: relative;
-  overflow: hidden;
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
 }
-
 
 .project img {
   width: 100%;
   height: auto;
   max-width: none;
   margin-bottom: 0px;
+  display: block;
+  transition: transform var(--transition-base);
 }
 
-.docker img {
-  width: 100%;
-  height: 101%;
-  max-width: none;
-  margin-bottom: 0px;
+.project:hover img {
+  transform: scale(1.04);
 }
 
 
 .project:hover::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 1; /* Change opacity to 1 */
-  transition: opacity 0.3s;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(47, 90, 83, 0.15) 0%, rgba(20, 30, 28, 0.78) 100%);
+  opacity: 1;
+  transition: opacity var(--transition-base);
   z-index: 1;
 }
 
 .project:hover p {
-  visibility: visible; 
+  visibility: visible;
   opacity: 1; /* Add opacity to make the text visible */
   transition: opacity 0.3s, visibility 0.3s; /* Add opacity transition */
   position: absolute;
@@ -193,6 +208,10 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0 20px;
+  text-align: center;
   z-index: 2;
 }
 
@@ -223,8 +242,9 @@ p {
   }
   
   .carte img {
-    max-width: 100%; /* Pour que l'image prenne la largeur maximale de la carte */
-    height: auto; /* Pour maintenir le ratio d'aspect de l'image */
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
   }
   
   .carte h1 {

@@ -1,63 +1,4 @@
-body {
-  font-family: 'San Francisco', sans-serif;
-  background-image: url(../images/fond.png);
-  background-size: 120%;
-  background-repeat: no-repeat;
-  margin: 0;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-
-/* Navigation */
-nav {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-  border-radius: 25px;
-  background-color:#457f7694;
-  position: fixed;
-  top: 0; 
-  z-index: 999;
-}
-
-.navigation {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation a {
-  margin: 1rem 1rem 1rem 1rem;
-  text-decoration: none;
-  color: black;
-}
-
-.navigation p{
-  font-weight: bold;
-}
-
-
-section {
-  margin: 100px 20px 0px 20px;
-}
-
-.presentation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-  .bloc {
-      padding: 20px;
-      width: 300px;
-      margin-right: 20px;
-  }
+/* Deltas on top of common.css + project-common.css — used by project3.html */
 
 .bloc_texte {
   padding-top: 20px;
@@ -66,52 +7,32 @@ section {
   margin-right: 20px;
 }
 
-.project {
-  width: 50%;
-  border-radius: 1rem;
-}
-
-.p{
+.p {
   text-align: left;
 }
 
-.ajustement{
+.ajustement {
   margin-top: 4%;
 }
 
-.ajustement_bloc{
+.ajustement_bloc {
   padding: 0px 20px 20px 20px;
 }
 
-.ajustement_texte{
+.ajustement_texte {
   padding-top: 0%;
 }
 
-.ajustement_h{
+.ajustement_h {
   margin-top: 0%;
 }
 
 @media only screen and (max-width: 900px) {
-  
-  
   .bloc {
-      width: 100%;
-      margin-right: 10px;
-  }
-  
-  .bloc_texte {
-      width: 100%;
-  }
-  
-  .project {
-      width: 100%;
+    width: 100%;
   }
 
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .bloc_texte {
+    width: 100%;
   }
-  
 }

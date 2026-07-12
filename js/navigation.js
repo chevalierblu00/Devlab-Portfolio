@@ -8,13 +8,9 @@ function afficherSection(cible) {
     section.style.display = (section.id === cible) ? "" : "none";
   });
 
-  // Mettre en gras le lien cliqué et désélectionner les autres liens
+  // Mettre en avant le lien cliqué et désélectionner les autres liens
   navigationLinks.forEach(link => {
-    if (link.getAttribute("data-target") === cible) {
-      link.style.fontWeight = "bold";
-    } else {
-      link.style.fontWeight = "normal";
-    }
+    link.classList.toggle("active", link.getAttribute("data-target") === cible);
   });
 
   // Sauvegarder l'ID de la dernière section affichée dans le stockage local
