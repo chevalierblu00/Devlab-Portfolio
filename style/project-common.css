@@ -15,9 +15,7 @@ nav {
   margin-top: 1.5rem;
   padding: 6px;
   border-radius: 999px;
-  background-color: rgba(47, 90, 83, 0.82);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background-color: rgba(47, 90, 83, 0.95);
   box-shadow: var(--shadow-sm);
   position: fixed;
   top: 0;
@@ -81,7 +79,6 @@ section {
 }
 
 h2 {
-  color: var(--color-mint);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 1rem;
@@ -89,12 +86,21 @@ h2 {
 
 h4 {
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
 }
 
-.p {
-  color: #fff;
+@media only screen and (min-width: 901px) {
+  h2 {
+    color: var(--color-mint);
+  }
+
+  h4 {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .p {
+    color: #fff;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -110,5 +116,14 @@ h4 {
   .image,
   .project {
     width: 100%;
+  }
+
+  h2 {
+    color: var(--color-mint);
+  }
+
+  h4,
+  .p {
+    color: var(--color-text);
   }
 }

@@ -23,9 +23,7 @@ nav {
   margin-top: 1.5rem;
   padding: 6px;
   border-radius: 999px;
-  background-color: rgba(47, 90, 83, 0.82);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background-color: rgba(47, 90, 83, 0.95);
   box-shadow: var(--shadow-sm);
   position: fixed;
   top: 0;
@@ -154,7 +152,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  margin: 10% 10% 0% 10%;
+  margin: 10rem 10% 0 10%;
   justify-items: center;
 }
 
@@ -241,7 +239,7 @@ p {
     align-items: center;
   }
   
-  .carte img {
+  .carte:not(.project) img {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -256,26 +254,34 @@ p {
   }
 
   #compétance {
-    margin: 0%;
+    margin: 14rem 0 0;
   }
 
   #project {
-    grid-template-columns: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14rem;
   }
 
-  .project:before p{
-    visibility: hidden;
-    opacity: 0;
-    color: rgba(255, 255, 255, 0);
+  .project {
+    width: 100%;
   }
 
-  .project:hover p{
-    visibility: hidden;
-    opacity: 0;
-    color: rgba(255, 255, 255, 0);
+  .project:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
   }
 
-  /* Override styles for project cards */
+  .project:hover img {
+    transform: none;
+  }
+
+  .project:hover::before {
+    content: none;
+  }
+
+  /* Légende toujours visible sous l'image sur mobile (pas de survol au toucher) */
   .project p {
     visibility: visible;
     opacity: 1;
@@ -283,7 +289,9 @@ p {
     top: auto;
     left: auto;
     transform: none;
-    color: rgb(0, 0, 0);
+    color: var(--color-text);
+    font-weight: 600;
+    padding: 14px 16px;
     z-index: initial;
   }
 }

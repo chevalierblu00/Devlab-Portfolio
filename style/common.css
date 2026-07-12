@@ -1,6 +1,7 @@
 /* Shared by every page of the site */
 
 :root {
+  color-scheme: light;
   --color-primary: #457f76;
   --color-primary-dark: #2f5a53;
   --color-accent: #579635;
