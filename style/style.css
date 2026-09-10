@@ -284,7 +284,8 @@ p {
     content: none;
   }
 
-  .project p {
+  .project p,
+  .project:hover p {
     visibility: visible;
     opacity: 1;
     position: static;
