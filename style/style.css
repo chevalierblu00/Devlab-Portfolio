@@ -14,7 +14,6 @@ h1 {
   font-size: 36px;
 }
 
-/* Navigation */
 nav {
   display: flex;
   flex-direction: row;
@@ -54,12 +53,10 @@ nav {
   font-weight: 700;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Page content container */
 .container {
   max-width: 1200px;
   margin: 10rem auto 0rem;
@@ -104,7 +101,6 @@ html {
   display: inline-block;
 }
 
-/* Competence section */
 #compétance {
   margin: 10rem 10rem 0rem 10rem;
 }
@@ -147,7 +143,6 @@ html {
   font-weight: 600;
 }
 
-/* Project section */
 #project {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -200,8 +195,8 @@ html {
 
 .project:hover p {
   visibility: visible;
-  opacity: 1; /* Add opacity to make the text visible */
-  transition: opacity 0.3s, visibility 0.3s; /* Add opacity transition */
+  opacity: 1; 
+  transition: opacity 0.3s, visibility 0.3s;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -216,21 +211,19 @@ html {
 
 .project p {
   visibility: hidden;
-  opacity: 0; /* Set initial opacity to 0 */
+  opacity: 0; 
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
 
-/* Center-aligned paragraphs */
 p {
   text-align: center;
 }
 
 
 @media (max-width: 900px) {
-  /* Styles for screens narrower than 900px */
   
   .grid,
   .grid2,
@@ -273,6 +266,11 @@ p {
     width: 100%;
   }
 
+  .project img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
   .project:hover {
     transform: none;
     box-shadow: var(--shadow-sm);
@@ -286,7 +284,6 @@ p {
     content: none;
   }
 
-  /* Légende toujours visible sous l'image sur mobile (pas de survol au toucher) */
   .project p {
     visibility: visible;
     opacity: 1;
