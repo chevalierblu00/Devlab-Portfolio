@@ -175,8 +175,9 @@ html {
 
 .project img {
   width: 100%;
-  height: auto;
+  height: 430px;
   max-width: none;
+  object-fit: cover;
   margin-bottom: 0px;
   display: block;
   transition: transform var(--transition-base);
