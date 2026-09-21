@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Vercel CLI (local project link, not meant to be shared)
+.vercel
+
+# Node (au cas où un jour un outil de build serait ajouté)
+node_modules/
+npm-debug.log*

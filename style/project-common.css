@@ -39,13 +39,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.16);
 }
 
-.navigation p {
-  margin: 0;
-  font-weight: 700;
-  color: #fff;
-}
-
-.navigation p a {
+.navigation a.current {
   font-weight: 700;
 }
 
@@ -59,7 +53,7 @@ section {
 .presentation {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .bloc {
@@ -71,9 +65,12 @@ section {
 .image,
 .project {
   width: 65%;
+  aspect-ratio: 16 / 9;
   height: auto;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
+  overflow: hidden;
+  object-fit: cover;
 }
 
 h2 {
@@ -102,8 +99,24 @@ h4 {
 }
 
 @media only screen and (max-width: 900px) {
+  nav {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    max-width: 80%;
+    justify-content: center;
+    gap: 2px;
+    padding: 5px;
+  }
+
+  .navigation a {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.82rem;
+  }
+
   .presentation {
     flex-direction: column;
+    padding-bottom: 20px;
   }
 
   .bloc {
